@@ -1,0 +1,162 @@
+/* styles.css */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(234, 29%, 20%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 1200px;
+  height: 80vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 40px;
+  margin: 0 20px;
+}
+.success {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  max-width: 310px;
+  height: 60vh;
+}
+.success-check {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.form-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-container h1 {
+  justify-items: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.form-container p {
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(235, 18%, 26%);
+  margin: 20px 0;
+  padding-right: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0 0 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-container form label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-container form input {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid hsl(231, 7%, 60%);
+}
+
+.form-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.form-container li {
+  font-size: 14px;
+  color: hsl(235, 18%, 26%);
+  margin: 10px 0;
+  font-weight: 400;
+}
+span {
+  margin-right: 10px;
+}
+.error {
+  display: none;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: hsl(4, 100%, 67%);
+}
+.invalid {
+  border: 1px solid hsl(4, 100%, 67%); /* Example: Red border for invalid input */
+}
+
+.form-container form button {
+  padding: 15px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: hsl(234, 29%, 20%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.form-container button:hover {
+  background: linear-gradient(to right, #ff6157, #ff576d);
+}
+.form-container .btn {
+  margin-bottom: 30px;
+}
+.form-container .btn:hover {
+  border-radius: 10px;
+}
+::placeholder {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  margin-left: 10px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .image-container {
+    display: none;
+  }
+}
