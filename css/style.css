@@ -151,4 +151,19 @@ span {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .image-container {
+    order: 1;
+  }
+  .form-container {
+    order: 2;
+  }
+}
+
+@media (max-width: 500px) {
+}
+
+@media (max-width: 375px) {
 }
